@@ -1,0 +1,57 @@
+.footer-container{
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
+}
+
+.back-to-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.help-text,
+.arrows-img{
+    color: white;
+    cursor: pointer;
+}
+
+.contact-buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.contact-btn{
+    border: none;
+    border-radius: 10px;
+    background-color: #C4C4C4;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-img{
+    width: 30px;
+    height: 30px;
+}
+
+.rights{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.rights-text{
+    color: white;
+}

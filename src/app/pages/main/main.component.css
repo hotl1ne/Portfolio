@@ -1,0 +1,277 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+.main-page-container{
+    width: 100%;
+    height: auto;
+    background-color: #c6c6c6;
+}
+
+.maininfo-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    background: #000;
+}
+
+.maininfo-container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #d3d3d3;
+    clip-path: polygon(0 0, 50% 0, 35% 100%, 0 100%);
+}
+
+#about
+{
+    height: 40px;
+}
+
+.intro {
+    width: fit-content;
+    position: relative;
+}
+
+.content-wrapper { 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 20px; 
+    position: relative;
+    padding: 120px;
+}
+
+.intro {
+    width: fit-content;
+    position: relative;
+}
+
+.small-text {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    margin: 5px 0;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    color: #777;
+}
+
+.contact-buttons{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contact-btn{
+    border: none;
+    border-radius: 10px;
+    background-color: #C4C4C4;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.contact-img{
+    width: 30px;
+    height: 30px;
+}
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 220px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.title-container{
+    display: flex;
+    justify-content: center;
+}
+
+.h3title{
+    border: 5px solid black;
+    text-align: center;
+    padding: 20px 100px 20px 100px;
+}
+
+.about-text-container{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.separator
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.development-wrapper{
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.optimazing-development-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.development-container,
+.optimazing-container{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.development-container
+{
+    padding-left: 40px;
+}
+
+.optimazing-container{
+    padding-right: 40px;
+}
+
+.maintenace-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.maintenance{
+    width: 600px;
+}
+
+.development-logo,
+.optimazing-logo,
+.maintenance-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.skills-container{
+    padding-top: 50px;
+}
+
+.skills-title,
+.download-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-title{
+    margin-top: 60px;
+}
+
+.skills-paragraph,
+.download-paragraph
+{
+    width: 600px;
+}
+
+.skills-paragraph p,
+.download-paragraph p
+{
+    font-weight: bold;
+    font-size: 130%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin:auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.grid-item img {
+    width: 80px;
+    height: auto;
+}
+
+.grid-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+}
+
+.download-title{
+    flex-direction: column;
+}
+
+.download-btn{
+    border: none;
+    width: 150px;
+    height: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.download-btn:hover{
+    background-color: rgb(66, 66, 255);
+}
+
+.portfolio-wrapper{
+    width: 100%;
+    height: auto;
+}
+
+.portfilio-title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+    background-image: url("/mountains.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.color-separator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 60px;
+    background-color: #1A1A1A;
+}
