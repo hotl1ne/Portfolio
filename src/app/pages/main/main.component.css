@@ -1,5 +1,6 @@
 *{
     font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
 }
 
 .main-page-container{
@@ -204,6 +205,7 @@
     font-weight: bold;
     font-size: 130%;
     font-family: "Montserrat", sans-serif;
+    max-width: 600px;
 }
 
 .grid-container {
@@ -256,15 +258,16 @@
     height: auto;
 }
 
-.portfilio-title-container{
+.portfilio-title-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 240px;
     background-image: url("/mountains.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: center;
 }
+
 
 .color-separator{
     display: flex;
@@ -274,4 +277,118 @@
     width: 100%;
     height: 60px;
     background-color: #1A1A1A;
+}
+
+@media (max-width:1198px) {
+    .maininfo-container::before {
+        clip-path: polygon(0 0, 40% 0, 85% 100%, 0 100%);
+    }
+}
+
+@media (max-width:859px) {
+    .maininfo-container::before {
+        clip-path: polygon(0 0, 70% 0, 95% 100%, 0 100%);
+    }
+}
+
+@media (max-width:781px) {
+    .optimazing-development-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .development-container{
+        padding-left: 0;
+    }
+
+    .optimazing-container{
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 604px) {
+
+    *{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        overflow-x: hidden;
+    }
+
+    .maininfo-container {
+        background-image: url("/backgroundMAIN.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        justify-content: center;
+    }
+
+    .maininfo-container::before {
+        content: none;
+    }
+
+    .content-wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro,
+    .about-wrapper,
+    .about-text-container{
+        width: 400px;
+    }
+
+    .about-container{
+        height: 300px;
+    }
+
+    p.subtitle{
+        color: white;
+    }
+
+    .development-container,
+    .optimazing-container,
+    .maintenance{
+        width: 300px;
+    }
+
+    .skills-paragraph,
+    .download-paragraph{
+        width: auto;
+    }
+
+}
+
+@media (max-width: 523px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:400px) {
+    .about-text-container{
+        width: auto;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .name{
+        font-weight: 600;
+    }
+}
+
+@media (max-width:346px) {
+    .name{
+        font-weight: 400;
+    }
 }

@@ -8,6 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './headear.component.css'
 })
 export class HeadearComponent {
+
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
   scrollToSection(section: string): void {
     const element = document.getElementById(section);
     if (element) {
