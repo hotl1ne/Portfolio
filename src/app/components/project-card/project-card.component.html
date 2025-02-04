@@ -2,7 +2,7 @@
 
     <div class="project-card">
 
-        <img src="photo_2025-02-01_21-26-11.jpg" alt="project">
+        <img [src]="project?.photoUrl" alt="project">
 
         <div class="overlay-container">
 
@@ -10,22 +10,22 @@
 
                 <div class="work-container">
 
-                    <span>Coded, no mobile</span>
+                    <span>{{project?.work}}</span>
     
                 </div>
     
                 <div class="project-name-container">
     
-                    <h3>NFT-Market</h3>
-                    <p>Place for selling or buying NFT`s</p>
+                    <h3>{{project?.name}}</h3>
+                    <p>{{project?.description}}</p>
     
                 </div>
     
                 <div class="buttons-container">
     
-                    <a href="https://nft-market-one-psi.vercel.app/" target="_blank">Demo</a>
+                    <a [href]="project?.demoUrl" target="_blank">Demo</a>
                     
-                    <a href="https://github.com/hotl1ne/NFT-Market" target="_blank">Code</a>
+                    <a [href]="project?.codeUrl" target="_blank">Code</a>
 
                 </div>
 
